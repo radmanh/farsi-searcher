@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>فارسی سرچر</title>
+    <link rel="icon" href="http://s13.picofile.com/file/8401665050/Farsi9.png" type = "image/x-icon">
+    <style>
+        .search_box{
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 185px;
+        }
+        .topic{
+            font-family:titr;
+            font-size: 50px;
+        }
+        .au_btn{
+            border-radius: 13px;
+            border : 1px solid black;
+            text-align: center;
+            font-size: large;
+        }
+        .buttom{
+            margin-top: 185px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class = 'search_box'>
+        <h1 class = "topic">فارسی سرچر</h1>
+        <input id="search_title" name="search_title" placeholder="اینجا سرچ کن" type="text" style="width: 555px;padding: 15px;border-radius: 22px;border: 1px solid gray;margin-top: 20px;"><br>
+        <script>
+            function searcher(topic){
+                var target_page = 'https://www.google.com/search?q=' + topic
+                window.location.href=target_page
+            }
+        </script>
+        <button onclick="window.searcher(search_title.value)" style="margin-right: 10px;margin-top: 40px;width: 123px;padding: 7px;border-radius: 13px;border: 1px solid black;font-size: large;">سرچ</button>
+        <button class="au_btn" style="margin-left: 10px;width: 123px;padding:7px" onclick="alert(' راه ارتباطی با ما ایمیل در زیر صفحه \n این وبسایت توسط رادمان حیدری در سال 99 ساخته شده')">درباره ی ما</button>
+        <p id = 'search-title'></p>
+    </div>
+    <div class="buttom">
+        <button style="font-size: 14px;width: 123px;padding: 9px;" onclick="window.location.href='http://bmbgk.ir/?q=%D9%81%D8%A7%D8%B1%D8%B3%DB%8C+%D8%B3%D8%B1%DA%86%D8%B1'">چطوری سرچ کنم؟</button>
+        <p style=" font-size: 18px;margin-top: 8px;">radman.heydari.1398.2019@gmail.com</p>
+    </div>
+</body>
+</html>
